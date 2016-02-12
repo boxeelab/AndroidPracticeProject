@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Notification</string>
+    <string name="simple_notification">Simple Notification</string>
+    <string name="expanded_layout_notification">Expanded Layout Notification</string>
+    <string name="task_stackback_notification">Stack Back Notification</string>
+    <string name="custom_layout_notification">Custom Layout Notification</string>
+    <string name="multi_page_wear_notification">Multi Page Wear Notification</string>
+</resources>
