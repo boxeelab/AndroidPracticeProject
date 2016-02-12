@@ -1,57 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:orientation="vertical"
-    tools:context="com.example.dmondal.notification.MainActivity">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+    <LinearLayout
 
-    <Button
-        android:id="@+id/btn_simple_notification"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/simple_notification"
-        android:layout_margin="16dp"
-        android:padding="16dp"/>
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.example.dmondal.notification.MainActivity">
 
-    <Button
-        android:id="@+id/btn_expanded_layout_notification"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/expanded_layout_notification"
-        android:layout_margin="16dp"
-        android:padding="16dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello World!" />
 
-    <Button
-        android:id="@+id/btn_task_stackback_notification"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/task_stackback_notification"
-        android:layout_margin="16dp"
-        android:padding="16dp"/>
+        <Button
+            android:id="@+id/btn_simple_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:padding="16dp"
+            android:text="@string/simple_notification" />
 
-    <Button
-        android:id="@+id/btn_custom_layout_notification"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/custom_layout_notification"
-        android:layout_margin="16dp"
-        android:padding="16dp"/>
+        <Button
+            android:id="@+id/btn_expanded_layout_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:padding="16dp"
+            android:text="@string/expanded_layout_notification" />
 
-    <Button
-        android:id="@+id/btn_multi_page_wear_notification"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/multi_page_wear_notification"
-        android:layout_margin="16dp"
-        android:padding="16dp"/>
-</LinearLayout>
+        <Button
+            android:id="@+id/btn_task_stackback_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:padding="16dp"
+            android:text="@string/task_stackback_notification" />
+
+        <Button
+            android:id="@+id/btn_custom_layout_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:padding="16dp"
+            android:text="@string/custom_layout_notification" />
+
+        <Button
+            android:id="@+id/btn_multi_page_wear_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:padding="16dp"
+            android:text="@string/multi_page_wear_notification" />
+    </LinearLayout>
+</ScrollView>
