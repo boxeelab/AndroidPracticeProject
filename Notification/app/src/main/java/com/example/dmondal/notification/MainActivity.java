@@ -1,8 +1,12 @@
 package com.example.dmondal.notification;
 
 
+import android.app.NotificationManager;
+import android.app.PendingIntent;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.NotificationCompat;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -66,7 +70,16 @@ public class MainActivity extends AppCompatActivity {
 
 
     protected void step1SimpleNotification() {
-
+        NotificationManager notificationManager = (NotificationManager)getSystemService(NOTIFICATION_SERVICE);
+        NotificationCompat.Builder notificationBuilder  = new NotificationCompat.Builder(this);
+        notificationBuilder.setSmallIcon(R.mipmap.ic_launcher);
+        notificationBuilder.setContentTitle("Simple Notification");
+        notificationBuilder.setContentText("Test file content");
+        notificationBuilder.setAutoCancel(true);
+        // Launch mainactivity when notification is cliked
+        PendingIntent pendingIntent = PendingIntent.getActivity(this, 1,new Intent(this,MainActivity.class) ,PendingIntent.FLAG_UPDATE_CURRENT);
+        notificationBuilder.setContentIntent(pendingIntent);
+        notificationManager.notify(1,notificationBuilder.build());
     }
 
     protected void step2ExpandedLayoutNotification() {
